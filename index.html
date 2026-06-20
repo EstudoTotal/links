@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nazli · Estudo Total — Links</title>
+  <meta name="description" content="Links do Estudo Total — Método de estudo para concursos públicos da Nazli.">
+  <link rel="icon" type="image/png" href="estudototal_favicon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nazli · Estudo Total — Links">
+  <meta property="og:description" content="Método de estudo para concursos públicos da Nazli.">
+  <meta property="og:image" content="nazli.jpg">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* =====================================================================
+   ESTUDO TOTAL — Link na Bio
+   ===================================================================== */
+
+    :root {
+      --green: #A4D048;
+      --green-deep: #8bb536;
+      --black: #000000;
+      --ink: #111111;
+      --ink-soft: #1a1a1a;
+      --white: #ffffff;
+      --gray-text: #a0a0a0;
+      --font: "Montserrat", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--black);
+      color: var(--white);
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ---------- layout ---------- */
+    .page {
+      width: 100%;
+      max-width: 480px;
+      padding: 48px 20px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+
+    /* ---------- profile ---------- */
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2.5px solid var(--green);
+      margin-bottom: 16px;
+    }
+
+    .name {
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: -.01em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .name .g {
+      color: var(--green);
+    }
+
+    .tagline {
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--gray-text);
+      letter-spacing: .04em;
+      margin-bottom: 28px;
+    }
+
+    /* ---------- links ---------- */
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      padding: 16px 20px;
+      border-radius: 14px;
+      background: var(--ink);
+      border: 1.5px solid rgba(255, 255, 255, .06);
+      font-family: var(--font);
+      font-weight: 700;
+      font-size: .92rem;
+      color: var(--white);
+      transition: transform .16s ease, border-color .2s ease, background .2s ease;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .link-btn:hover {
+      transform: translateY(-2px);
+      border-color: var(--green);
+      background: #161616;
+    }
+
+    .link-btn:active {
+      transform: translateY(0);
+    }
+
+    /* primary CTA variant */
+    .link-btn.primary {
+      background: var(--green);
+      color: var(--black);
+      border-color: var(--green);
+    }
+
+    .link-btn.primary:hover {
+      background: var(--green-deep);
+      border-color: var(--green-deep);
+      box-shadow: 0 8px 28px rgba(164, 208, 72, .3);
+    }
+
+    /* icon inside link */
+    .link-btn .icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .link-btn .icon svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    .link-btn .label {
+      flex: 1;
+    }
+
+    .link-btn .arrow {
+      opacity: .35;
+      font-size: .85rem;
+      transition: opacity .2s;
+    }
+
+    .link-btn:hover .arrow {
+      opacity: .7;
+    }
+
+    /* ---------- social row ---------- */
+    .socials {
+      display: flex;
+      gap: 18px;
+      margin-bottom: 28px;
+    }
+
+    .social-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--ink);
+      border: 1.5px solid rgba(255, 255, 255, .06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color .2s, transform .16s;
+    }
+
+    .social-icon:hover {
+      border-color: var(--green);
+      transform: translateY(-2px);
+    }
+
+    .social-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--white);
+    }
+
+    /* ---------- footer ---------- */
+    .foot {
+      font-size: .7rem;
+      color: var(--gray-text);
+      letter-spacing: .04em;
+      text-align: center;
+      padding-bottom: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <!-- PROFILE -->
+    <img class="avatar" src="nazli.jpg" alt="Nazli">
+    <div class="name"><span class="g">E</span>studo <span class="g">T</span>otal</div>
+    <div class="tagline">Desempenho de outro mundo</div>
+
+    <!-- LINKS — edite aqui -->
+    <div class="links" id="links"></div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="socials">
+      <a class="social-icon" href="https://www.instagram.com/nazlisetton/" target="_blank" rel="noopener"
+        aria-label="Instagram">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7ZM17.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z" />
+        </svg>
+      </a>
+      <a class="social-icon" href="https://www.youtube.com/@nazlisetton" target="_blank" rel="noopener"
+        aria-label="YouTube">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.81ZM9.55 15.57V8.43L15.82 12l-6.27 3.57Z" />
+        </svg>
+      </a>
+      <a class="social-icon" href="https://nazlisetton-newsletter.beehiiv.com/" target="_blank" rel="noopener"
+        aria-label="Newsletter">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="foot">© <span id="year"></span> Estudo Total · Nazli · Feito com tecnologia alienígena</div>
+
+  </div>
+
+  <script>
+    /* =====================================================================
+       LINKS — Para adicionar, remover ou reordenar links, edite esta lista.
+       Cada item:
+         label  → texto do botão
+         url    → para onde leva
+         icon   → (opcional) "course" | "mentoria" | "site" | "newsletter" | "login" | "youtube"
+         primary → (opcional) true para destacar em verde
+       ===================================================================== */
+    const LINKS = [
+      {
+        label: "Conhecer o Estudo Total (curso e mentoria)",
+        url: "https://et.nazlisetton.com.br/",
+        icon: "course",
+        primary: true
+      },
+      {
+        label: "Newsletter gratuita",
+        url: "https://nazlisetton-newsletter.beehiiv.com/",
+        icon: "newsletter"
+      },
+      {
+        label: "YouTube",
+        url: "https://www.youtube.com/@nazlisetton",
+        icon: "youtube"
+      },
+      {
+        label: "Área do aluno",
+        url: "https://www.nazlisetton.com.br/login",
+        icon: "login"
+      }
+    ];
+
+    /* ---------- icons ---------- */
+    const ICONS = {
+      course: `<svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3ZM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>`,
+      mentoria: `<svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3Zm-8 0c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3Zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5Zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5Z"/></svg>`,
+      site: `<svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93Zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39Z"/></svg>`,
+      newsletter: `<svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg>`,
+      youtube: `<svg viewBox="0 0 24 24"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.88.55 9.38.55 9.38.55s7.5 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.81ZM9.55 15.57V8.43L15.82 12l-6.27 3.57Z"/></svg>`,
+      login: `<svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4Zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4Z"/></svg>`
+    };
+
+    /* ---------- render ---------- */
+    const container = document.getElementById("links");
+    LINKS.forEach(link => {
+      const a = document.createElement("a");
+      a.href = link.url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.className = "link-btn" + (link.primary ? " primary" : "");
+
+      const iconHtml = link.icon && ICONS[link.icon]
+        ? `<span class="icon">${ICONS[link.icon]}</span>` : "";
+
+      a.innerHTML = `${iconHtml}<span class="label">${link.label}</span><span class="arrow">›</span>`;
+      container.appendChild(a);
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>
